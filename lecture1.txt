@@ -1,0 +1,31 @@
+Introduction 2/4/21
+
+Digital Image: a two dimensional array of pixels
+-size (or resolution) of an image:
+width: N pixels, height: M pixels
+-precision of pixels: 2^n amplitude levels -> n bits per pixel
+-Overall data file size: N*M*n bits
+
+Digital Video: sequence of digital image frames
+-frame rate of a video sequence:
+f frames per second
+-overall data rate: N*M*n*f bits per second
+
+Image processing is to perform numerical operations on higher dimensional signals such as images and video sequences
+Objectives of image processing include:
+-improving the appearance of the visual data: image enhancement, image restoration
+-extracting useful information: image analysis, reconstruction from projection
+-representing the image in an alternate and possibly more efficient form: transformation, image compression
+
+Image enhancement and restoration refers to a general class of operators that can improve the quality of images for various applications
+In general the input of these operators are somehow distorted or damaged images
+Image enhancement techniques do not assume any knowledge on the distortion process of the input images therefore they are usually simple and ad-hoc
+Image restoration techniques are able to use the knowledge of the image distortion process to restore the original image through an mathematical inverse process. So they are usually more effective but far more complex. 
+
+Filtering, as an essential digital signal processing (DSP) operation, provides an obvious solution to many image enhancement problems
+for image filtering, finite inpulse response (FIR) filters and non linear morphological filters are popular choices because of their simplicity.
+Direct filtering can be used to achieve: 
+-edge enhancement -> high pass filters
+-noise reduction - low pass filters
+the performance can usually be inproved through adaptive filtering based on local and directional variations
+
